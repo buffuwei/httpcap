@@ -39,6 +39,7 @@
 cd httpcap
 go mod download
 go build -o httpcap
+env GOOS=linux GOARCH=amd64 go build -o httpcap-linux-amd64
 ```
 
 ## 使用说明
